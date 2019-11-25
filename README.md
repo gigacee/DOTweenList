@@ -120,3 +120,7 @@ await dotweenList.PlayForward().Skippable(() => Input.anyKeyDown);
 ## DOTween Animation
 
 DOTween Pro の機能である DOTween Animation を DOTweenList に詰める場合は、以下のように書きます。
+
+```cs
+var dotweenList = new DOTweenList(GetComponent<DOTweenAnimation>().GetTweens());
+```
