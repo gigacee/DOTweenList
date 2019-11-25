@@ -10,6 +10,7 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 /[Aa]ssets/Externals*
+/[Aa]ssets/DOTweenList_Examples_ForDOTweenPro*
 
 # Visual Studio cache directory
 .vs/
