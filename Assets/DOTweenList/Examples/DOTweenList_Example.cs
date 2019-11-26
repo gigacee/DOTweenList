@@ -45,7 +45,7 @@ public class DOTweenList_Example : MonoBehaviour
 
 		await dotweenList.PlayForward();
 
-		message.text = "All tweens completed.";
+		message.text = "All tweens completed!";
 	}
 
 	async UniTask PlayTweensBackwardsAsync()
@@ -54,16 +54,16 @@ public class DOTweenList_Example : MonoBehaviour
 
 		await dotweenList.PlayBackwards();
 
-		message.text = "All tweens rewinded.";
+		message.text = "All tweens rewinded!";
 	}
 
 	async UniTask PlayTweensForwardByIdAsync()
 	{
 		message.text = "Playing Forwards...";
 
-		await dotweenList; //.PlayForwardById("idTest");
+		await dotweenList.PlayForwardById("idTest");
 
-		message.text = "Tween B completed.";
+		message.text = "Tween B completed!";
 	}
 
 	async UniTask PlayTweensBackwardsByIdAsync()
@@ -72,6 +72,6 @@ public class DOTweenList_Example : MonoBehaviour
 
 		await dotweenList.PlayBackwardsById("idTest");
 
-		message.text = "Tween B rewinded.";
+		message.text = "Tween B rewinded!";
 	}
 }
