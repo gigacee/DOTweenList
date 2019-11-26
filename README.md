@@ -9,6 +9,12 @@ DOTween の複数の Tween をまとめて再生したり、待機したりで�
 - [DOTween](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676)
 - [UniTask](https://github.com/Cysharp/UniTask)
 
+## インストール
+
+DOTweenList.cs を任意のディレクトリに配置してください。
+
+[UnityPackage](https://github.com/Gigacee/DOTweenList/releases/) を使用してインストールすることもできます。
+
 ## 使い方
 
 ### 準備
