@@ -185,9 +185,9 @@ public class DOTweenList : CustomYieldInstruction
 
 public static class DOTweenListExtensions
 {
-	public static Tween AddTo(this Tween tween, DOTweenList dotweenList)
+	public static Tween AddTo(this Tween self, DOTweenList dotweenList)
 	{
-		if (tween == null)
+		if (self == null)
 		{
 			throw new ArgumentNullException("tween");
 		}
@@ -197,9 +197,9 @@ public static class DOTweenListExtensions
 			throw new ArgumentNullException("dotweenList");
 		}
 
-		dotweenList.Add(tween);
+		dotweenList.Add(self);
 
-		return tween;
+		return self;
 	}
 
 	public static DOTweenList Skippable(this DOTweenList self, Func<bool> cond)
@@ -211,10 +211,6 @@ public static class DOTweenListExtensions
 
 	public static async void Forget(this DOTweenList self)
 	{
-		try
-		{
-			await self;
-		}
-		catch (OperationCanceledException) { }
+		await self;
 	}
 }
